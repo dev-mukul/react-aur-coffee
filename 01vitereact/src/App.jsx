@@ -1,11 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 
+import Coffee from "./coffee"
 
 function App() {
 
   return (
-   <h1>coffee aur react with vite | HC</h1>
+    <>
+   <Coffee/>
+   <h1>chai aur react</h1>
+   <p>test para</p>
+    </>
+   
   )
 }
 
