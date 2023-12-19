@@ -31,6 +31,11 @@ const reactElement = {
     children: 'Click me to visist google'
 }
 
-const mainContainer = document.querySelector('#root')
+const anotherElement = (
+    <a href="https://google.com" target="_blank">Visit 
+    google</a>
+)
+
+ReactDom.createRoot(document.getElementById('root')).
 
 customRender(reactElement, mainContainer)
