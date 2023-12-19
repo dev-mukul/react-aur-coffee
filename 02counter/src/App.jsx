@@ -8,9 +8,12 @@ function App() {
   // let counter =  15
 
   const addValue = () => {
-    console.log("clicked", counter);
     // counter = counter + 1
     mukulCounter(counter + 1)
+  }
+
+  const removeValue = () => {
+    mukulCounter(counter -1)
   }
 
   return (
@@ -23,7 +26,9 @@ function App() {
     onClick={addValue}
     >Add Value {counter}</button>
     <br/>
-    <button>Remove value {counter}</button>
+    <button
+    onClick={removeValue}
+    >Remove value {counter}</button>
     <p>Footer: {counter}</p>
     </>
   )
