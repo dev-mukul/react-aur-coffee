@@ -3,13 +3,16 @@ import reactLogo from './assets/react.svg';
 import citeLogo from '/vite.svg'
 function App() {
       //  var       fun  
-  let [counter, mukulCounter]  = useState(15)
+  const [counter, mukulCounter]  = useState(15)
 
   // let counter =  15
 
   const addValue = () => {
     // counter = counter + 1
-    mukulCounter(counter + 1)
+    mukulCounter(prevCounter=> prevCounter + 1)
+    mukulCounter(prevCounter=> prevCounter + 1)
+    mukulCounter(prevCounter=> prevCounter + 1)
+    mukulCounter(prevCounter=> prevCounter + 1)
   }
 
   const removeValue = () => {
@@ -30,6 +33,7 @@ function App() {
     onClick={removeValue}
     >Remove value {counter}</button>
     <p>Footer: {counter}</p>
+
     </>
   )
 }
